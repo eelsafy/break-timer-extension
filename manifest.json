@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "55/5 Stand & Walk Break Timer",
+  "version": "1.0",
+  "description": "Reminds you every 55 minutes to take a 5-minute break to stand and walk.",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

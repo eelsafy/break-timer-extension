@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 220px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+      text-align: center;
+      background: #f8fafc;
+      color: #0f172a;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 16px;
+      color: #1e293b;
+    }
+    #status {
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .work { color: #2563eb; }
+    .break { color: #16a34a; }
+    #timer {
+      font-size: 32px;
+      font-weight: 700;
+      font-family: monospace;
+      margin: 10px 0 16px 0;
+      color: #0f172a;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-start { background: #2563eb; color: white; }
+    .btn-start:hover { background: #1d4ed8; }
+    .btn-stop { background: #ef4444; color: white; }
+    .btn-stop:hover { background: #dc2626; }
+  </style>
+</head>
+<body>
+  <h3>Break Timer</h3>
+  <div id="status" class="work">Idle</div>
+  <div id="timer">55:00</div>
+  <button id="toggleBtn" class="btn-start">Start Focus</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
